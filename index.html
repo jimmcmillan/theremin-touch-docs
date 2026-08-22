@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theremin Touch – Support &amp; FAQ</title>
+<meta name="description" content="Support, FAQ and contact for Theremin Touch, the vintage styled theremin simulator for iPhone and iPad.">
+<link rel="icon" href="images/icon_rounded.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <img src="images/icon_rounded.jpg" alt="">
+    <div>
+      <h1>Theremin Touch</h1>
+      <p>the real theremin simulator</p>
+    </div>
+    <nav>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="scale" aria-hidden="true">
+  <svg viewBox="0 0 1600 64" preserveAspectRatio="none">
+    <path d="M0 32 C50 0 100 0 150 32 S250 64 300 32 S400 0 450 32 S550 64 600 32 S700 0 750 32 S850 64 900 32 S1000 0 1050 32 S1150 64 1200 32 S1300 0 1350 32 S1450 64 1500 32 S1600 0 1650 32"/>
+  </svg>
+</div>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:0">
+    <div>
+      <h2>A vintage styled theremin for iPhone and iPad.</h2>
+      <p>Single oscillator, monophonic, with the instability that makes a real theremin a real theremin. Slide your finger across the touch pad to control pitch and volume, or use Apple Pencil on iPad.</p>
+      <a class="btn" href="https://apps.apple.com/app/theremin-touch/id1168287678">Download on the App Store</a>
+    </div>
+    <img src="images/iphone_0_screenshot_lrg.jpg" alt="Theremin Touch main screen on iPhone">
+  </section>
+
+  <section>
+    <h3>Features</h3>
+    <ul class="features">
+      <li>Touch pad controls frequency (left to right) and volume (bottom to top)</li>
+      <li>4 oscillator wave shapes</li>
+      <li>Onboard delay and reverb</li>
+      <li>Adjustable low and high frequency limits for a more playable instrument</li>
+      <li>1 to 7 octave range (approx.), C1 (32.703 Hz) to C8 (4.186 kHz)</li>
+      <li>Built-in tuner and pitch readout</li>
+      <li>Works with Apple Pencil on iPad</li>
+      <li>Customisable look</li>
+      <li>Portrait and landscape</li>
+      <li>Built with AudioKit</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Screens</h3>
+    <div class="shots">
+      <figure><img src="images/ipad_1_craft_your_sound.jpg" alt="Oscillator and effects controls"><figcaption>Craft your sound</figcaption></figure>
+      <figure><img src="images/ipad_2_touchpad.jpg" alt="The touch pad play surface"><figcaption>Touch pad</figcaption></figure>
+      <figure><img src="images/ipad_3_settings.jpg" alt="Settings screen"><figcaption>Settings</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h3>FAQ</h3>
+
+    <details>
+      <summary>I get no sound.</summary>
+      <p>Check the physical mute switch and the device volume first; the app plays through the standard media output, so a muted or silenced device produces nothing. Version 2.6 added a volume control on the main screen and fixed the most common cause of this report. If you are on an older version, update from the App Store.</p>
+    </details>
+
+    <details>
+      <summary>How does volume work?</summary>
+      <p>Volume follows your finger vertically on the touch pad: lower on the pad is quieter, higher is louder. Pitch follows the horizontal position. There is a short demo here: <a href="https://youtu.be/nwmSFtjBKwg">Theremin Touch volume demo</a>.</p>
+    </details>
+
+    <details>
+      <summary>The pitch range is too wide to play accurately.</summary>
+      <p>Open Settings and narrow the lowest and highest frequency limits. The pad then maps to a smaller range, which makes it far easier to hit notes. The two limits are kept at least one octave apart.</p>
+    </details>
+
+    <details>
+      <summary>Can I reset everything?</summary>
+      <p>Yes. Settings has a "Reset to Defaults" button which restores all knobs, limits and appearance options to their original values.</p>
+    </details>
+
+    <details>
+      <summary>Does it support Apple Pencil?</summary>
+      <p>On iPad, yes. The touch pad responds to Pencil as well as finger input.</p>
+    </details>
+
+    <details>
+      <summary>Is there an AUv3 or MIDI version?</summary>
+      <p>No. Theremin Touch is a standalone app. It has no MIDI input or output and does not load as a plug-in in other apps.</p>
+    </details>
+
+    <details>
+      <summary>Does it run on Mac?</summary>
+      <p>The App Store lists it as available on Apple silicon Macs via iPad app compatibility, but it is designed and tested for iPhone and iPad only. It is not verified for macOS.</p>
+    </details>
+
+    <details>
+      <summary>What does the app collect about me?</summary>
+      <p>Nothing. See the <a href="privacy.html">privacy policy</a>.</p>
+    </details>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p class="note">Found a bug or have a question the FAQ doesn't cover? Fill this in and tap Send. It opens your mail app with the message pre-filled; nothing is sent until you press send there.</p>
+    <form id="support-form">
+      <label>Topic
+        <select id="topic">
+          <option>Bug report</option>
+          <option>No sound</option>
+          <option>Question</option>
+          <option>Feature request</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Device and iOS version
+        <input id="device" type="text" placeholder="e.g. iPad Air (5th gen), iPadOS 18.4" autocomplete="off">
+      </label>
+      <label>Message
+        <textarea id="message" required></textarea>
+      </label>
+      <div><button class="btn" type="submit">Send</button></div>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="privacy.html">Privacy policy</a>
+    <a href="https://apps.apple.com/app/theremin-touch/id1168287678">App Store</a>
+    <div>© 2017 John McMillan</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('support-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var topic = document.getElementById('topic').value;
+  var device = document.getElementById('device').value.trim();
+  var msg = document.getElementById('message').value.trim();
+  var subject = 'Theremin Touch: ' + topic;
+  var body = (device ? 'Device: ' + device + '\n\n' : '') + msg;
+  window.location.href = 'mailto:theremin2_support@proton.me'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
